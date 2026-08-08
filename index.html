@@ -15,6 +15,8 @@
     --glass:rgba(89,80,73,0.035); --glass-border:rgba(89,80,73,0.14);
   }
   *{margin:0;padding:0;box-sizing:border-box;}
+  html{overflow-x:hidden;}
+  img,svg,video{max-width:100%;height:auto;}
   html{scroll-behavior:smooth;}
   body{background:var(--black);color:var(--silver);font-family:'Poppins',sans-serif;font-weight:300;overflow-x:hidden;}
   a{text-decoration:none;color:inherit;} ul{list-style:none;}
@@ -24,7 +26,7 @@
   .logo-img{display:block;object-fit:contain;width:auto;}
   .logo-img-header{height:56px;max-width:220px;}
   .logo-img-footer{height:52px;max-width:220px;}
-  .logo-img-sobre{height:auto;width:140%;max-width:none;margin-left:-20%;margin-bottom:22px;}
+  .logo-img-sobre{height:auto;width:100%;max-width:260px;display:block;margin:0 auto 22px;}
   .brand-text{font-family:'Anton',sans-serif;font-size:19px;letter-spacing:0.6px;text-transform:uppercase;color:var(--silver);transition:color .2s;}
   .brand-text:hover{color:var(--gold);}
 
@@ -78,7 +80,7 @@
   .card{background:var(--glass);border:1px solid var(--glass-border);backdrop-filter:blur(18px);border-radius:16px;padding:28px;transition:transform .3s ease, box-shadow .3s ease, border-color .3s ease;display:flex;flex-direction:column;gap:16px;}
   .card:hover{transform:translateY(-8px);border-color:rgba(191,149,98,0.4);box-shadow:0 20px 45px rgba(0,0,0,0.4), 0 0 30px rgba(191,149,98,0.08);}
   .card-icon{width:56px;height:56px;border-radius:12px;display:flex;align-items:center;justify-content:center;font-size:24px;background:linear-gradient(135deg, rgba(191,149,98,0.18), rgba(191,149,98,0.03));border:1px solid rgba(191,149,98,0.25);}
-  .card-image{width:100%;height:160px;border-radius:12px;object-fit:cover;border:1px solid var(--glass-border);background:rgba(51,47,41,0.03);display:block;}
+  .card-image{width:100%;height:160px;border-radius:12px;object-fit:contain;object-position:center;border:1px solid var(--glass-border);background:rgba(51,47,41,0.03);display:block;}
   .card h3{font-size:18px;color:var(--silver);font-weight:600;}
   .card p{font-size:13.5px;color:var(--muted);line-height:1.6;flex:1;}
   .card-footer{display:flex;align-items:center;justify-content:space-between;margin-top:8px;gap:10px;}
